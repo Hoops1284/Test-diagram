@@ -1,0 +1,15 @@
+graph TD
+A[Data sources]
+A1[Client systems]
+A2[Servers]
+A3[Networking devices]
+A4[Cloud computing instances]
+A5[IoT devices]
+A1 --> B[Logstash]
+A2 --> B
+A3 --> B
+A4 --> B
+A5 --> B
+B --> C[Filter]
+C --> D[Elasticsearch]
+D --> E[Kibana]
